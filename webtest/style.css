@@ -3,7 +3,7 @@
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/inter-v12-latin-regular.woff")
       format("woff");
@@ -80,16 +80,16 @@ header {
 }
 .welcome p {
   max-width: 950px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2rem;
-  color: white;
+  color: #f9fafc;
   font-weight: 400;
   padding: 0 1rem 0rem 1rem;
   text-align: center;
 }
 .welcome a {
   font-size: 1.5rem;
-  color: white;
+  color: #777b85;
   background-color: #5046e5;
   padding: 25px 128px;
   display: inline-block;
