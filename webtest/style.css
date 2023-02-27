@@ -1,0 +1,150 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/inter-v12-latin-regular.woff")
+      format("woff");
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/inter-v12-latin-700.woff")
+      format("woff") /* Modern Browsers */;
+}
+html {
+  font-family: Inter, sans-serif;
+}
+body {
+  background-image: url(/images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+:root {
+  --primary-font-color: #777b85;
+}
+a,
+p {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-size: 0, 7rem;
+}
+
+header {
+  width: 100dvw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: white;
+}
+
+.main-navigation {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  gap: 1rem;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+/*! do not move this item from here*/
+
+.pic {
+  position: absolute;
+
+  filter: brightness(60%);
+  background-size: cover;
+  height: 100vh;
+}
+.welcome {
+  position: relative;
+  margin: 120px auto;
+  text-align: center;
+  width: 100%;
+}
+.welcome p {
+  max-width: 950px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: white;
+  font-weight: 400;
+  padding: 0 1rem 0rem 1rem;
+  text-align: center;
+}
+.welcome a {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #5046e5;
+  padding: 25px 128px;
+  display: inline-block;
+  border-radius: 8px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+}
+h2 {
+  color: black;
+}
+h3 {
+  color: #222832;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+/*AFTER HEADER*/
+
+.produts-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1 rem;
+  gap: 1rem;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: #f9fafc;
+  border-top: 1px solid rgba(119, 123, 133, 0.4);
+}
+.card {
+  display: grid;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  min-height: 500px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+footer {
+  margin: 3rem 1rem;
+  gap: 2rem;
+}
+.footer-nav {
+  display: flex;
+}
+.footer-div {
+  justify-content: center;
+}
